@@ -7,9 +7,7 @@
     <details open>
       <summary class="faq-question">
         What is Frontend Mentor, and how will it help me?
-        <span class="faq-button" aria-hidden="true"
-          ><img src="./public/images/icon-plus.svg" alt="" /></span
-        >
+        <span class="faq-button" aria-hidden="true"></span>
       </summary>
       <p class="faq-answer">
         Frontend Mentor offers realistic coding challenges to help developers
@@ -18,12 +16,11 @@
         building.
       </p>
     </details>
+    <hr />
     <details>
       <summary class="faq-question"
         >Is Frontend Mentor free?
-        <span class="faq-button" aria-hidden="true"
-          ><img src="./public/images/icon-plus.svg" alt="" /></span
-        >
+        <span class="faq-button" aria-hidden="true"></span>
       </summary>
       <p class="faq-answer">
         Yes, Frontend Mentor offers both free and premium coding challenges,
@@ -31,12 +28,11 @@
         for all skill levels.
       </p>
     </details>
+    <hr />
     <details>
       <summary class="faq-question"
         >Can I use Frontend Mentor projects in my portfolio?
-        <span class="faq-button" aria-hidden="true"
-          ><img src="./public/images/icon-plus.svg" alt="" /></span
-        ></summary
+        <span class="faq-button" aria-hidden="true"></span></summary
       >
       <p class="faq-answer">
         Yes, you can use projects completed on Frontend Mentor in your
@@ -44,12 +40,11 @@
         employers!
       </p>
     </details>
+    <hr />
     <details>
       <summary class="faq-question"
         >How can I get help if I'm stuck on a challenge?
-        <span class="faq-button" aria-hidden="true"
-          ><img src="./public/images/icon-plus.svg" alt="" /></span
-        >
+        <span class="faq-button" aria-hidden="true"></span>
       </summary>
       <p class="faq-answer">
         The best place to get help is inside Frontend Mentor's Discord
@@ -62,8 +57,9 @@
 
 <style>
   @font-face {
-    font-family: 'Work Sans';
-    src: url('/fonts/WorkSans-VariableFont_wght.ttf') format('truetype-variations');    
+    font-family: "Work Sans";
+    src: url("/fonts/WorkSans-VariableFont_wght.ttf")
+      format("truetype-variations");
     font-weight: 400 700;
     font-style: normal;
   }
@@ -76,9 +72,10 @@
 
   :global(body) {
     font-size: 16px;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     --White: hsl(0, 100%, 100%);
     --Purple-100: hsl(275, 100%, 97%);
+    --Purple-400: hsl(276, 89%, 52%);
     --Purple-600: hsl(292, 16%, 49%);
     --Purple-950: hsl(292, 42%, 14%);
   }
@@ -95,27 +92,28 @@
   }
 
   .faq-accordion {
-    width: 35em;
+    width: 34em;
     background: var(--White);
-    padding: 2em;
+    padding: 2.5em 2.5em 1em 2.5em;
     border-radius: 0.8em;
-
   }
 
   .faq-header {
     display: flex;
     align-items: center;
     gap: 1em;
+    margin-bottom: 0.75em;
   }
 
   .star {
-    width: 28px;
-    height: 28px;
+    width: 2.2em;
+    height: 2.2em;
   }
 
   .faq-header h1 {
     font-size: 2.5rem;
     font-weight: 700;
+    color: var(--Purple-950);
   }
 
   .faq-question {
@@ -125,6 +123,42 @@
     justify-content: space-between;
     font-size: 1rem;
     font-weight: 600;
-    border-bottom: 1px solid grey;
+    padding: 1em 0em;
+    color: var(--Purple-950);
+    outline: none;
+    cursor: pointer;
   }
+
+  .faq-answer {
+    font-size: 0.875rem;
+    color: var(--Purple-600);
+    padding-bottom: 1.5em;
+    line-height: 1.5;
+  }
+
+  hr {
+    border: none;
+    height: 0.5px;
+    background: var(--Purple-100);
+  }
+
+  .faq-question:hover,
+  .faq-question:focus {
+    color: var(--Purple-400);
+  }
+
+  .faq-button {
+    width: 1.75em;
+    height: 1.75em;
+    display: block;
+    background-image: url("./public/images/icon-plus.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  details[open] .faq-button {
+    background-image: url("./public/images/icon-minus.svg");
+  }
+
+  
 </style>
