@@ -4,7 +4,7 @@
       <img class="star" src="./public/images/icon-star.svg" alt="" />
       <h1>FAQs</h1>
     </header>
-    <details>
+    <details open>
       <summary class="faq-question">
         What is Frontend Mentor, and how will it help me?
         <span class="faq-button" aria-hidden="true"
@@ -46,7 +46,7 @@
     </details>
     <details>
       <summary class="faq-question"
-        >How can I get help if I'm stuck on a Frontend Mentor challenge?
+        >How can I get help if I'm stuck on a challenge?
         <span class="faq-button" aria-hidden="true"
           ><img src="./public/images/icon-plus.svg" alt="" /></span
         >
@@ -62,9 +62,9 @@
 
 <style>
   @font-face {
-    font-family: "Work Sans";
-    src: "./public/fonts/WorkSans-VariableFont_wght.ttf" format("ttf");
-    font-weight: 400 600 700;
+    font-family: 'Work Sans';
+    src: url('/fonts/WorkSans-VariableFont_wght.ttf') format('truetype-variations');    
+    font-weight: 400 700;
     font-style: normal;
   }
 
@@ -76,7 +76,7 @@
 
   :global(body) {
     font-size: 16px;
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Work Sans', sans-serif;
     --White: hsl(0, 100%, 100%);
     --Purple-100: hsl(275, 100%, 97%);
     --Purple-600: hsl(292, 16%, 49%);
@@ -92,5 +92,39 @@
     background-image: url(./public/images/background-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: 100%;
+  }
+
+  .faq-accordion {
+    width: 35em;
+    background: var(--White);
+    padding: 2em;
+    border-radius: 0.8em;
+
+  }
+
+  .faq-header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .star {
+    width: 28px;
+    height: 28px;
+  }
+
+  .faq-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .faq-question {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 1px solid grey;
   }
 </style>
