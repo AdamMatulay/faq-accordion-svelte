@@ -1,7 +1,7 @@
 <main>
   <section class="faq-accordion">
     <header class="faq-header">
-      <img class="star" src="./public/images/icon-star.svg" alt="" />
+      <img class="star" src="./images/icon-star.svg" alt="" />
       <h1>FAQs</h1>
     </header>
     <details open>
@@ -58,7 +58,7 @@
 <style>
   @font-face {
     font-family: "Work Sans";
-    src: url("/fonts/WorkSans-VariableFont_wght.ttf")
+    src: url("./fonts/WorkSans-VariableFont_wght.ttf")
       format("truetype-variations");
     font-weight: 400 700;
     font-style: normal;
@@ -86,7 +86,7 @@
     align-items: center;
     background-color: var(--Purple-100);
     min-height: 100dvh;
-    background-image: url(./public/images/background-pattern-desktop.svg);
+    background-image: url(./images/background-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -151,7 +151,7 @@
     width: 1.75em;
     height: 1.75em;
     display: block;
-    background-image: url("./public/images/icon-plus.svg");
+    background-image: url("./images/icon-plus.svg");
     background-size: cover;
     background-repeat: no-repeat;
     flex-shrink: 0;
@@ -159,12 +159,12 @@
   }
 
   details[open] .faq-button {
-    background-image: url("./public/images/icon-minus.svg");
+    background-image: url("./images/icon-minus.svg");
   }
 
   @media (max-width: 36.5625em) {
     main {
-      background-image: url(./public/images/background-pattern-mobile.svg);
+      background-image: url(./images/background-pattern-mobile.svg);
     }
 
     .faq-accordion {
