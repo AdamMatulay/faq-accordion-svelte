@@ -154,11 +154,36 @@
     background-image: url("./public/images/icon-plus.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    flex-shrink: 0;
+    margin-left: 1.25em;
   }
 
   details[open] .faq-button {
     background-image: url("./public/images/icon-minus.svg");
   }
 
-  
+  @media (max-width: 36.5625em) {
+    main {
+      background-image: url(./public/images/background-pattern-mobile.svg);
+    }
+
+    .faq-accordion {
+      max-width: 87%;
+      padding: 1.5em 1.5em 0.5em 1.5em;
+      border-radius: 0.6em;
+    }
+
+    .faq-header {
+      gap: 1.5em;
+    }
+
+    .star {
+      width: 1.65em;
+      height: 1.65em;
+    }
+
+    .faq-header h1 {
+      font-size: 2rem;
+    }
+  }
 </style>
